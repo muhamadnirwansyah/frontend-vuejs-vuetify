@@ -63,20 +63,22 @@ Users can:
 ---
 
 ## 📂 Project Structure
+
+````markdown
 src/
 │
 ├── assets/
 ├── components/
 ├── router/
-│ └── router.js
+│   └── router.js
 ├── stores/
-│ └── questionStore.js
+│   └── questionStore.js
 ├── views/
-│ ├── Login.vue
-│ ├── Dashboard.vue
-│ └── Questions.vue
+│   ├── Login.vue
+│   ├── Dashboard.vue
+│   └── Questions.vue
 ├── plugins/
-│ └── vuetify.js
+│   └── vuetify.js
 ├── App.vue
 └── main.js
 
