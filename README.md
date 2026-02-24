@@ -1,38 +1,98 @@
-# sosial-media-app
+# 🚀 Vue Questions App
 
-This template should help get you started developing with Vue 3 in Vite.
+Simple Question Management App built with Vue 3 + Vuetify.
 
-## Recommended IDE Setup
+This project demonstrates CRUD functionality, state management, authentication (mock), and reactive UI updates using modern Vue ecosystem.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## ✨ Features
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+### 🔐 Authentication (Mock)
+- Login page with mock username & password
+- Simple localStorage auth
+- Route protection using Vue Router guard
+- Logout functionality
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### 📌 Questions (Post CRUD)
 
-## Project Setup
+Users can:
 
-```sh
+- ✅ View list of questions
+- ➕ Create new question
+- ✏️ Edit their own questions
+- 🔄 Change question status (open, answered, closed)
+- 🗓 View created date & time
+
+Each question contains:
+- Title
+- Description
+- Status
+- Created Date
+- Created By
+
+Initial questions are pre-populated in memory when app loads.
+
+---
+
+### 💬 Comments System
+
+Each question supports multiple comments.
+
+Users can:
+- ➕ Add comment
+- ✏️ Edit their own comment
+- See UI update instantly (reactive state, no reload)
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Description |
+|------------|------------|
+| Vue 3 | Frontend Framework |
+| Vite | Build Tool |
+| Vuetify 3 | UI Component Library |
+| Vue Router | Routing & Route Guard |
+| Pinia | State Management |
+| JavaScript | Main language |
+| LocalStorage | Simple mock authentication |
+
+---
+
+## 📂 Project Structure
+src/
+│
+├── assets/
+├── components/
+├── router/
+│ └── router.js
+├── stores/
+│ └── questionStore.js
+├── views/
+│ ├── Login.vue
+│ ├── Dashboard.vue
+│ └── Questions.vue
+├── plugins/
+│ └── vuetify.js
+├── App.vue
+└── main.js
+
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone repository
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
+http://localhost:5173
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Username: admin
+Password: 123456
